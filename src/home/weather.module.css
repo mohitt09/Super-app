@@ -1,0 +1,60 @@
+.weather {
+  background-color: #101744;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.box {
+  margin: 0 1rem 1rem 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather span {
+  border: 1px solid white;
+}
+
+.sky,
+.temp,
+.wind {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pressure {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0 0 0;
+}
+
+.pressure img {
+  padding: 0.5rem 0.5rem 0 0;
+}
+
+.date {
+  background-color: #ff4ade;
+  justify-content: space-around;
+  display: flex;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.wind div {
+  display: flex;
+  align-items: center;
+}
+
+.wind div:nth-child(1) {
+  margin-bottom: 1rem;
+}
+
+.wind div img {
+  padding-right: 0.5rem;
+}

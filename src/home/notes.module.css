@@ -1,0 +1,42 @@
+.box {
+  background-color: #f1c75b;
+  flex-grow: 2;
+  border-radius: 1rem;
+  margin: 0 1rem 1rem 0;
+  padding: 2rem 0.5rem 2rem 2rem;
+  min-width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.box h2{
+  color: black;
+}
+
+.box textarea{
+  flex-grow: 1;
+  background: none;
+  outline: none;
+  border: 0;
+  color: black;
+}
+
+.box textarea::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.5rem;
+}
+
+.box textarea::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.box textarea:hover::-webkit-scrollbar-thumb {
+  background-color: #FFE6A6;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .box{
+    height: 30vh;
+  }
+}
+

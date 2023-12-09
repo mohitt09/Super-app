@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: fit-content;
+  width: 50%;
+}
+
+.tab img {
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  width: 140px;
+}
+
+.tab {
+  margin: 0 1rem 2rem 1rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .box {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .tab {
+    margin: 0 0.5rem 1rem 0.5rem;
+  }
+}

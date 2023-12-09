@@ -1,0 +1,42 @@
+.box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 20vw;
+}
+.top img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.top {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.74);
+}
+
+.title p {
+  padding: 1rem;
+}
+
+.bottom {
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 0 0 1rem 1rem;
+  height: auto;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .box {
+    max-width: 100%;
+    margin: 1rem 1rem 0 0;
+  }
+}

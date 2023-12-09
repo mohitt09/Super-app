@@ -1,0 +1,77 @@
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.poster {
+  width: 20rem;
+  min-width: 20rem;
+  background-color: rgb(59, 59, 59);
+  border-radius: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  display: flex;
+  z-index: 1;
+  transition: 0.4s;
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.4s;
+  width: 100%;
+  background-image: linear-gradient(to top, black, transparent);
+}
+.name p {
+  margin: 1rem;
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+}
+
+.poster:hover .name {
+  opacity: 1;
+}
+
+.posters {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  padding: 0 2rem;
+}
+
+
+
+.posters::-webkit-scrollbar {
+  background-color: transparent;
+  height: 0.5rem;
+}
+
+.posters::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.posters:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(59, 59, 59);
+  border-radius: 1rem;
+}
+
+.title {
+  margin: 1rem 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .poster {
+      width: 15rem;
+      min-width: 15rem;
+    }
+  }
